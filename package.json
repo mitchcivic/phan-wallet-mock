@@ -17,16 +17,20 @@
     "doc": "typedoc src/*.ts --readme README.md"
   },
   "directories": {
-    "dist": "./dist/src"
+    "test": "test"
   },
   "files": [
     "dist/src/*"
   ],
-  "repository": "git@github.com:thlorenz/phan-wallet-mock.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thlorenz/phan-wallet-mock.git"
+  },
   "devDependencies": {
     "@types/bs58": "^4.0.1",
     "@types/debug": "^4.1.7",
     "@types/node": "^16.11.7",
+    "@types/node-fetch": "^2.6.2",
     "@types/tape": "^4.13.2",
     "bs58": "^4.0.1",
     "esbuild": "^0.13.13",
@@ -44,5 +48,17 @@
     "supports-color": "^9.0.2",
     "tslib": "^2.3.1",
     "tweetnacl": "^1.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/thlorenz/phan-wallet-mock/issues"
+  },
+  "homepage": "https://github.com/thlorenz/phan-wallet-mock#readme",
+  "keywords": [
+    "cypress",
+    "mock",
+    "wallet",
+    "phantom",
+    "brave",
+    "solana"
+  ]
 }
