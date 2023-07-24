@@ -3,7 +3,7 @@ name: Build and Test
 on:
   push:
     branches: [master]
-  pull_request: 
+  pull_request:
     branches: [master]
 
 env:
@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./.github/actions/install-solana
-        with: 
+        with:
           solana_version: ${{ env.SOLANA_VERSION }}
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "16"
 
       - uses: actions/cache@v2
         with:
